@@ -17,7 +17,7 @@ Toute la data necessaire se trouve dans le fichier `data.json`.
 Cette section contient un `Select` qui regroupe les différents sports qui se trouve dans les `nextEvents`.
 La sélection que tu fera dans ce sélecteur va influencer sur les prochains événements qui s'affichent en dessous. 
 
-La liste affiche 3 évènements à la fois. Deux boutons sont présents pour passer 3 suivants ou 3 précédents.
+La liste affiche 3 évènements à la fois. Deux boutons sont présents pour passer aux 3 suivants ou aux 3 précédents.
 Ils devront être disabled si il n'y a pas d'évènements (avant ou après).
 
 ![](./pictures/NextEvent2.png)
@@ -25,11 +25,13 @@ Ils devront être disabled si il n'y a pas d'évènements (avant ou après).
 Si aucun évènement ne ressort, afficher ceci:
 ![](./pictures/empty.png)
 
+> Le format de la date est donnée en Timestamp. [Moment.js](https://momentjs.com) sera ton ami.
+
 ## Médailles
 
 ![](./pictures/Table.png)
 
-Ici tu devra afficher un tableau qui affiche le nombre de médailles gagnées par chaque pays. Il sera par défaut trié par le total de médailles, du plus de médailles au moins. Mais il sera possible de trier aussi par la collone `Or`, `Argent` et `Bronze`.
+Ici tu devras afficher un tableau qui affiche le nombre de médailles gagnées par chaque pays. Il sera par défaut trié par le total de médailles, du plus de médailles au moins. Mais il sera possible de trier aussi par la collone `Or`, `Argent` et `Bronze`.
 
 # Partage du résultat
 
