@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "dbaeumer.vscode-eslint",
+    "miclo.sort-typescript-imports",
+    "pflannery.vscode-versionlens",
+    "streetsidesoftware.code-spell-checker",
+    "esbenp.prettier-vscode",
+    "william-voyek.vscode-nginx",
+    "ms-azuretools.vscode-docker",
+    "rebornix.project-snippets",
+    "firsttris.vscode-jest-runner",
+    "redhat.vscode-yaml",
+    "aaron-bond.better-comments",
+    "dcortes92.freemarker"
+  ]
+}

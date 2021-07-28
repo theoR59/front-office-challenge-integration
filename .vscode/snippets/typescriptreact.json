@@ -1,0 +1,59 @@
+{
+  "reactComponent": {
+    "prefix": "reactcomp",
+    "body": [
+      "import React from 'react'",
+      "import { defineMessages, useIntl } from 'react-intl'",
+      "import { stylesheet } from 'typestyle'",
+      "",
+      "const translations = defineMessages({",
+      "  // test: 'test',",
+      "})",
+      "",
+      "interface rectProps {}",
+      "",
+      "export const rect: React.FC<rectProps> = () => {",
+      "  /***** Context and Hooks *****/",
+      "  const intl = useIntl()",
+      "  // const ability = useAbility(AbilityContext)",
+      "",
+      "  /***** UseState useRef *****/",
+      "  // you can use `state` snippet to create this",
+      "  // const [variable, setVariable] = useState(false)",
+      "",
+      "  /***** Query and Fragment *****/",
+      "",
+      "  /***** Data modifications and new const *****/",
+      "",
+      "  /***** Functions and mutations *****/",
+      "",
+      "  return <></>",
+      "}",
+      "",
+      "const css = stylesheet({",
+      "  // container: {width: '100%'}",
+      "})"
+    ],
+    "description": "Create a new React Component"
+  },
+  "state": {
+    "prefix": "state",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState$2($3)"],
+    "description": "Create a state"
+  },
+  "queryGraphQL": {
+    "prefix": "queryGql",
+    "body": ["const query = graphql`", "query ${name:$TM_FILENAME_BASE}Query {", "}", "`"],
+    "description": "Create a const for query"
+  },
+  "fragmentGraphQL": {
+    "prefix": "fragGql",
+    "body": [
+      "const fragment = graphql`",
+      "fragment ${name:$TM_FILENAME_BASE}_fragment {",
+      "}",
+      "`"
+    ],
+    "description": "Create a const for query"
+  }
+}
