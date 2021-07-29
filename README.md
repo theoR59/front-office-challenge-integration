@@ -4,7 +4,7 @@ L'objectif de ce challenge est de reproduire la page suivante avec les élèment
 
 ![](./pictures/JOPage.png)
 
-Le défi est de ne pas utiliser de CSS (ou très peu) pour atteindre ce résultat. 
+Le défi est de ne pas utiliser de CSS (ou très peu) pour atteindre ce résultat.
 
 ## Data
 
@@ -15,7 +15,7 @@ Toute la data nécessaire se trouve dans le fichier `data.json`.
 ![](./pictures/NextEvent.png)
 
 Cette section contient un `Select` qui regroupe les différents sports qui se trouvent dans les `nextEvents`.
-La sélection que tu feras dans ce sélecteur va influencer l'affichage des prochains évènements qui s'affichent en dessous. 
+La sélection que tu feras dans ce sélecteur va influencer l'affichage des prochains évènements qui s'affichent en dessous.
 
 La liste affiche 3 évènements à la fois. Deux boutons sont présents pour passer aux 3 suivants ou aux 3 précédents.
 Ils devront être désactivés si il n'y a pas d'évènements (avant ou après).
@@ -40,14 +40,16 @@ Concernant le partage du résultat, il est préférable de travailler sur un for
 
 Puis de m'envoyer son lien sur tristan@monqualiticien.com.
 
-Tu as une semaine pour réaliser cette page. 
+Tu as une semaine pour réaliser cette page.
 
-N'hésite pas à me demander si il y a un point que tu ne comprends pas. 
+N'hésite pas à me demander si il y a un point que tu ne comprends pas.
 
-Regarde bien les composants proposés par [Ant Design](https://ant.design/components/overview/) et réalise cette page avec comme but de te rapprocher au maximum de ce résultat. 
+Regarde bien les composants proposés par [Ant Design](https://ant.design/components/overview/) et réalise cette page avec comme but de te rapprocher au maximum de ce résultat.
+
+## Notes de l'auteur
+
+Ce sujet pré-suppose d'une installation de node et de yarn préalable.
+Si vous n'avez jamais utilisé yarn, sachez simplement que la commande `yarn` effectuera l'installation des dépendances décrites dans le package.json, et que `yarn start` lancera l'application web.
+React testing library est configuré et utilisable via `yarn test` pour votre confort, mais le coverage de l'application n'est pas demandé.
 
 Enjoy!
-
-
-
-
