@@ -35,7 +35,9 @@ Ici l'objectif est afficher un tableau qui affiche le nombre de médailles gagn�
 
 # Partage du résultat
 
-Concernant le partage du résultat, il est préférable de travailler sur un fork de ce repo ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fguides.github.com%2Factivities%2Fforking%2F&psig=AOvVaw0EDXlLZz2uTUSl8P55PFXs&ust=1627630366412000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjY-PLhh_ICFQAAAAAdAAAAABAD) puis de m'envoyer son lien sur tristan@monqualiticien.com.
+Concernant le partage du résultat, il est préférable de travailler sur un fork de ce repo,
+![](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
+puis de m'envoyer son lien sur tristan@monqualiticien.com.
 
 Tu as une semaine pour réaliser cette page. 
 
