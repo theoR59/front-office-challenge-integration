@@ -35,7 +35,7 @@ Ici l'objectif est afficher un tableau qui affiche le nombre de médailles gagn�
 
 # Partage du résultat
 
-La modalité de rendu souhaitée est de travailler sur un fork de ce repo puis de m'envoyer son lien sur tristan@monqualiticien.com.
+Concernant le partage du résultat, il est préférable de travailler sur un fork de ce repo ![](./pictures/Fork.png) puis de m'envoyer son lien sur tristan@monqualiticien.com.
 
 Tu as une semaine pour réaliser cette page. 
 
