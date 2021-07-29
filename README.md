@@ -49,7 +49,7 @@ Regarde bien les composants proposés par [Ant Design](https://ant.design/compon
 ## Notes de l'auteur
 
 Ce sujet pré-suppose d'une installation de node et de yarn préalable.
-Si vous n'avez jamais utilisé yarn, sachez simplement que la commande `yarn` effectuera l'installation des dépendances décrites dans le package.json, et que `yarn start` lancera l'application web.
-React testing library est configuré et utilisable via `yarn test` pour votre confort, mais le coverage de l'application n'est pas demandé.
+Si tu n'as jamais utilisé yarn, sache simplement que la commande `yarn` effectuera l'installation des dépendances décrites dans le package.json, et que `yarn start` lancera l'application web.
+React testing library est configuré et utilisable via `yarn test` pour ton confort, mais le coverage de l'application n'est pas demandé.
 
 Enjoy!
