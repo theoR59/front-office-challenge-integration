@@ -8,7 +8,7 @@ function handleChange(value: Array<string>) {
 }
 
 const sportTitle = nextEvent.map((next) => (
-  <Option value={next.sportTitle} label={next.sportTitle}>
+  <Option key={next.id} value={next.sportTitle} label={next.sportTitle}>
     <div>{next.sportTitle}</div>
   </Option>
 ))
