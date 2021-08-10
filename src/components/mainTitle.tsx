@@ -1,4 +1,5 @@
 import { Typography } from 'antd'
+import './mainTitle.css'
 
 const { Title } = Typography
 

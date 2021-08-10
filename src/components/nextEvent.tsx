@@ -43,30 +43,47 @@ function Next() {
     slidesToScroll: 3,
     arrows: true,
   }
-
+  /*<Carousel {...settings}>{Sports}</Carousel>*/
   const Sports = nextEvent
     .filter((next) => selectedSport.includes(next.sportTitle))
     .map((next) => (
-      <Card key={next.id} hoverable cover={<img src={next.pictureUrl} alt={next.sportTitle} />}>
-        <Meta title={next.sportTitle} description={next.date} />
-      </Card>
+      <Col key={next.id} span={24}>
+        <Card
+          key={next.id}
+          className="carouselCard"
+          cover={<img src={next.pictureUrl} alt={next.sportTitle} />}
+        >
+          <Meta title={next.sportTitle} description={next.date} />
+        </Card>
+      </Col>
     ))
 
   return (
     <>
-      <Select
-        mode="multiple"
-        style={{ width: '100%' }}
-        placeholder="Selection des sports"
-        defaultValue={nextEvent.map((next) => next.sportTitle)}
-        onChange={handleChange}
-        optionLabelProp="label"
-      >
-        {sportTitle}
-      </Select>
-
-      <Title level={2}>{secondTitle}</Title>
-      <Carousel {...settings}>{Sports}</Carousel>
+      <Row justify={'center'}>
+        <Col span={20}>
+          <Select
+            mode="multiple"
+            style={{ width: '100%' }}
+            placeholder="Selection des sports"
+            defaultValue={nextEvent.map((next) => next.sportTitle)}
+            onChange={handleChange}
+            optionLabelProp="label"
+          >
+            {sportTitle}
+          </Select>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Title level={2}>{secondTitle}</Title>
+        </Col>
+      </Row>
+      <div className="carousel-slide">
+        <Row>
+          <Carousel {...settings}>{Sports}</Carousel>
+        </Row>
+      </div>
     </>
   )
 }

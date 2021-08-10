@@ -1,49 +1,23 @@
 body {
   background-color: #f1f2f5;
 }
-.ant-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.ant-carousel img {
+.card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.ant-carousel .slick-slider {
-  width: 90%;
-}
-.ant-carousel .slick-slider .slick-prev,
-.ant-carousel .slick-slider .slick-next,
-.ant-carousel .slick-slider .slick-prev:hover,
-.ant-carousel .slick-slider .slick-next:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid black;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.ant-carousel .slick-slider .slick-prev,
-.ant-carousel .slick-slider .slick-next,
-.ant-carousel .slick-slider .slick-prev .slick-disabled,
-.ant-carousel .slick-slider .slick-next .slick-disabled {
-  color: lightgray;
-  content: '';
+.carouselCard .ant-card-cover img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
 }
 
-.ant-carousel .slick-slider .slick-prev::before,
-.ant-carousel .slick-slider .slick-next::before {
-  content: '';
+.slick-track,
+.slick-list {
+  width: 90% !important;
 }
 
-.slick-active {
-  margin: 0 5px !important;
+.slick-slide .slick-active {
+  width: 25% !important;
 }
