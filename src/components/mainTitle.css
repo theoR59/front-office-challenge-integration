@@ -6,3 +6,7 @@ h1 {
 .ant-row {
   flex-flow: nowrap !important;
 }
+
+.mainTitle {
+  background-color: #c0c0c0;
+}

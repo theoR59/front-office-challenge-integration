@@ -8,7 +8,7 @@ const main: string = 'JO 2020'
 function MainTitle() {
   return (
     <>
-      <Title>{main}</Title>
+      <Title className="mainTitle">{main}</Title>
     </>
   )
 }

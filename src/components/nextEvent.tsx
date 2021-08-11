@@ -10,6 +10,7 @@ import {
 import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons'
 import { nextEvent } from '../data.json'
 import { useState } from 'react'
+import './NextEvent.css'
 
 function Next() {
   moment.locale('fr')
@@ -25,10 +26,7 @@ function Next() {
 
   const handleChange = (value: string[]) => {
     setSelectedSport(value)
-  } /*
-  function onChange(a, b, c) {
-    console.log(a, b, c)
-  }*/
+  }
 
   const sportTitle = nextEvent.map((next) => (
     <Option key={next.id} value={next.sportTitle} label={next.sportTitle}>
@@ -43,11 +41,10 @@ function Next() {
     slidesToScroll: 3,
     arrows: true,
   }
-  /*<Carousel {...settings}>{Sports}</Carousel>*/
   const Sports = nextEvent
     .filter((next) => selectedSport.includes(next.sportTitle))
     .map((next) => (
-      <Col key={next.id} span={24}>
+      <div>
         <Card
           key={next.id}
           className="carouselCard"
@@ -55,10 +52,11 @@ function Next() {
         >
           <Meta title={next.sportTitle} description={next.date} />
         </Card>
-      </Col>
+      </div>
     ))
 
   return (
+    /*{ > 0 ? (*/
     <>
       <Row justify={'center'}>
         <Col span={20}>
@@ -75,16 +73,21 @@ function Next() {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col span={20}>
           <Title level={2}>{secondTitle}</Title>
         </Col>
       </Row>
       <div className="carousel-slide">
-        <Row>
+        <Row justify={'center'}>
           <Carousel {...settings}>{Sports}</Carousel>
         </Row>
       </div>
-    </>
+    </> /*): (
+      <>
+      <Row justify={'center'}>
+        <Col span={20}><h2>Rien n'est selectionné</h2></Col>
+      </Row>
+    )}*/
   )
 }
 

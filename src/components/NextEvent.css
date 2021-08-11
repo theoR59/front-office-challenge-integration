@@ -1,16 +1,7 @@
-body {
-  background-color: #f1f2f5;
-}
-.card img {
+.carouselCard .ant-card-cover img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-.carouselCard .ant-card-cover img {
-  width: 100% !important;
-  height: 200px !important;
-  object-fit: cover !important;
 }
 
 .slick-track,
@@ -20,4 +11,8 @@ body {
 
 .slick-slide .slick-active {
   width: 25% !important;
+}
+
+.ant-row {
+  display: block;
 }
