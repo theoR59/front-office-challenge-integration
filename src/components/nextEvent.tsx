@@ -7,17 +7,17 @@ import {
   Select,
   Typography
   } from 'antd'
-import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons'
 import { nextEvent } from '../data.json'
 import { useState } from 'react'
 import './NextEvent.css'
+/*import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons'*/
 
 function Next() {
   moment.locale('fr')
   const { Option } = Select
   const { Title } = Typography
   const { Meta } = Card
-
+  let size: number = 5
   const secondTitle = 'Prochaines épreuves'
 
   const [selectedSport, setSelectedSport] = useState<Array<String>>(
@@ -26,6 +26,7 @@ function Next() {
 
   const handleChange = (value: string[]) => {
     setSelectedSport(value)
+    return (size = value.length)
   }
 
   const sportTitle = nextEvent.map((next) => (
@@ -44,19 +45,22 @@ function Next() {
   const Sports = nextEvent
     .filter((next) => selectedSport.includes(next.sportTitle))
     .map((next) => (
-      <div>
-        <Card
-          key={next.id}
-          className="carouselCard"
-          cover={<img src={next.pictureUrl} alt={next.sportTitle} />}
-        >
-          <Meta title={next.sportTitle} description={next.date} />
-        </Card>
+      <div key={next.id}>
+        <Col span={20}>
+          <Card
+            className="carouselCard"
+            cover={<img src={next.pictureUrl} alt={next.sportTitle} />}
+          >
+            <Meta
+              title={next.sportTitle}
+              description={moment(parseInt(next.date + '000')).format('DD/MM/YYYY - HH:mm')}
+            />
+          </Card>
+        </Col>
       </div>
     ))
 
   return (
-    /*{ > 0 ? (*/
     <>
       <Row justify={'center'}>
         <Col span={20}>
@@ -72,22 +76,23 @@ function Next() {
           </Select>
         </Col>
       </Row>
-      <Row>
+      <Row justify={'center'}>
         <Col span={20}>
           <Title level={2}>{secondTitle}</Title>
         </Col>
       </Row>
       <div className="carousel-slide">
         <Row justify={'center'}>
-          <Carousel {...settings}>{Sports}</Carousel>
+          {size !== 0 ? (
+            <Carousel {...settings}>{Sports}</Carousel>
+          ) : (
+            <Col span={20}>
+              <h2>Rien n'est selectionné</h2>
+            </Col>
+          )}
         </Row>
       </div>
-    </> /*): (
-      <>
-      <Row justify={'center'}>
-        <Col span={20}><h2>Rien n'est selectionné</h2></Col>
-      </Row>
-    )}*/
+    </>
   )
 }
 

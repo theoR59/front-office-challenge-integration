@@ -70,8 +70,8 @@ function Medals() {
 
   return (
     <>
-      <Row>
-        <Col>
+      <Row justify={'center'}>
+        <Col span={20}>
           <Title level={2}>{main}</Title>
         </Col>
       </Row>
